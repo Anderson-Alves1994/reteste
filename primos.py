@@ -27,3 +27,7 @@ while True:
         print(i)
     if cont == 100:
         break
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
